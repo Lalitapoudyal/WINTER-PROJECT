@@ -1,0 +1,703 @@
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav.nav1 {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    height: 1px;
+    font-size: 1rem;
+}
+
+nav.nav2 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(202, 198, 198, 0.753);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin: 0 22px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 0 15px;
+    padding-top: 1px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+.dropdown-content a.pp {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    
+     /* Add this line to make the text bold */
+}
+
+/* If you want to override the font-weight for all links within dropdown-content, you can use the following rule */
+.dropdown-content a {
+    font-weight: normal; /* Set the default font-weight for other links within dropdown-content */
+}
+.container .a:hover {
+    text-decoration: underline;
+}
+.container.clicked {
+    text-decoration: underline;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    
+}
+
+.button-container button,
+.button-container a {
+   
+    
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    border-radius: 18px;
+    margin-left: 20px; 
+    box-sizing: border-box;
+    
+}
+.button-container i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: black;
+    background-color: white;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.dropdown-content a {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-more,
+.dropdown-equipment,
+.dropdown-gifts,
+.dropdown-subscribe {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 0 15px;
+    padding-top: 30px;
+}
+
+.dropdown-more .dropdown-content,
+.dropdown-equipment .dropdown-content,
+.dropdown-gifts .dropdown-content,
+.dropdown-subscribe .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-more:hover .dropdown-content,
+.dropdown-equipment:hover .dropdown-content,
+.dropdown-gifts:hover .dropdown-content,
+.dropdown-subscribe:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-Coffee a,
+.dropdown-equipment a,
+.dropdown-gifts a,
+.dropdown-subscribe a,
+.dropdown-Coffee a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    cursor: pointer;
+    border: none;
+    border-radius: 18px;
+    margin-left: 450px;
+    margin-top: 39px;
+}
+.divs{
+    height: 900px;
+    width: 1600px;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 900px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    transition: transform .5s ease, height.2s ease;
+    margin-bottom: 20px; 
+    margin-right: 100%;
+    
+   
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+.wrapper.active {
+    height: 800px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 800px;
+    
+}
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+    width: 100%;
+    padding: 105px;
+    box-sizing: border-box;
+    height: 900px;
+
+}
+.wrapper.active .form-box.login{
+    position: absolute;
+    transform: translateX(-400px);
+}
+/* ... (previous styles) */
+.wrapper .form-box.signin {
+    position: absolute;
+    transition: transform 0.18s ease;
+    transform: translateX(100%);
+    width: 120%; /* Occupy the full width of the container */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    height: 105%; /* Occupy full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrapper.active .form-box.signin {
+    transform: translateX(0);
+}
+
+/* ... (remaining styles) */
+
+.form-box h1 {
+    font-size: 2em;
+    color:black;
+    text-align: center;
+}
+.form-box p {
+    font-size: 0.5em;
+    color: black;
+    text-align: center;
+
+}
+.form-box.signin p{
+    font-size: 0.5em;
+    color: black;
+    text-align: center;
+  
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: 2px solid #162938;
+    margin: 30px 0;
+    
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    
+    font-weight: 500;
+    pointer-events: none;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -5px;
+    font-size: 0.8em;
+    color: #3498db;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    transform: translateY(-120%);
+    font-size: 0.8em;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+.remember-forgot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+
+}
+
+.remember-forgot a {
+    color: #162938;
+    text-decoration: none;
+    
+}
+.btn {
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    cursor:pointer;
+    font-size: 1em;
+    color: white;
+}
+.login-register .btn {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 2rem;
+    outline: none;
+    cursor:pointer;
+    font-size: 1em;
+    color: black;
+    padding: 10px;
+    margin-top: 29px;
+}
+.login-register a {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.form-box.signin .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text a {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.demoimage {
+    width: 100%;
+    height: 500px;
+}
+
+.text-and-image {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    margin-top: 60px;
+}
+
+.text-container {
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-weight: 100px; 
+  
+}
+
+.image-container {
+    width: 40%;
+    float: right;
+    margin-bottom: 120%;
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    transition: border-color 0.3s ease-in-out;
+}
+
+ .image-container:hover .image {
+        filter: brightness(80%); 
+    }
+.red:hover {
+    border: 10px solid red;
+}
+
+.blue:hover {
+    border: 10px solid blue;
+}
+
+.white:hover {
+    border: 10px solid black;
+}.coffee-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.coffee-item {
+    width: 22%;
+    height: auto;
+}
+
+.coffee-item.coffee-team {
+  width: 12%;
+  height: auto;
+}
+
+.botton-left {
+    position: absolute;
+    top: 56%;
+}
+
+.demo3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.demo4 {
+    text-align: center;
+    flex: 1;
+}
+
+.new1{
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-weight: 100px; 
+  
+}
+
+.last{
+   margin-top: 85px;
+   background-color: rgb(253, 251, 251);
+
+   
+}
+
+.outer-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .inner-button {
+    padding: 5px 10px;
+       color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+
+
+
+
+  
+  
+
+.imgdiv {
+    position: relative;
+
+    margin-top: 45px;
+}
+
+.image1 {
+    width: 102%;
+    height: 600px;
+    
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.text-overlay h1 p {
+    padding-bottom: 100px;
+}
+.text-overlay p {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    
+ 
+   
+}
+.divcbox {
+    height: 1500px;
+    width: 100%;
+    background-color: white;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cbox {
+    height: 1400px;
+    width: 80%;
+    justify-content: left;
+    align-items: left;
+    margin-top: 10px;
+    text-align: left; /* Align text to the left */
+    padding-left: 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 0 rgba(80, 57, 57, 0.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    transition: box-shadow .25s,-webkit-box-shadow .25s;
+    background-color: #FFF;
+}
+.ccontent {
+    height: 650px;
+    width: 90%;
+    justify-content: left;
+    align-items: left;
+    margin-top: 10px;
+    text-align: left; /* Align text to the left */
+    padding-left: 20px;
+   
+}
+.ccontent h3 p {
+    color: black;
+    margin: 0;
+}
+.ccontent h3 {
+    font-size: 1rem;
+
+    font-family: "Moderat", sans-serif;
+    color: #6c757d;
+}
+.ccontent p {
+    color: #6c757d;
+    font-family: var(--gfb-font-family);
+    
+}
+.ccontent p a {
+    color: #6c757d;
+}
+.wholesale-link {
+    color: black;
+}
+.valid {
+    height: 450px;
+    width: 90%;
+    justify-content: left;
+    align-items: left;
+    margin-top: 10px;
+    text-align: left; /* Align text to the left */
+    padding-left: 20px;
+ 
+}
+input[type=text], textarea {
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+   background-color: #f1f1f1;
+  }
+  
+  input[type=submit] {
+    background-color:black;
+    color: white;
+    padding: 8px 15px;
+   
+    border-radius: 18px;
+    width: 100px;
+   
+    cursor: pointer;
+  }
+  .valid #name_error,
+  .valid #email_error,
+  .valid #mess_error {
+    margin-bottom: 5px;
+    width: 345px;
+    font-size: 0.8rem;
+    background-color: white;
+    color: red;
+  }
+  .error-input {
+    border: 2px solid red;
+  }
+  .wrapper .form-box.signin .input-box {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.wrapper .form-box.signin .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.wrapper .form-box.signin .input-box input:focus + label,
+.wrapper .form-box.signin .input-box input:valid + label {
+    top: -5px;
+    font-size: 0.8em;
+    color: #3498db;
+}
+
+.wrapper .form-box.signin .input-box input:focus ~ label,
+.wrapper .form-box.signin .input-box input:valid ~ label {
+    transform: translateY(-120%);
+    font-size: 0.8em;
+}
+
+.wrapper .form-box.signin .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+#showPassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #202020;
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-color:black;
+    border-radius: 40px;
+    height: 50px;
+    width: 30%;
+  }
+ 
